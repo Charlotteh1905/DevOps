@@ -133,3 +133,5 @@ dist
 ^G
 
 
+td2/scripts/tofu/ec2-instance/.terraform/
+td4/scripts/tofu/live/lambda-sample/.terraform/
