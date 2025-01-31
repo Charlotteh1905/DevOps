@@ -1,9 +1,8 @@
-variable "bucket_name" {
-  description = "Nom du bucket S3"
-  type        = string
-}
+# ---------------------------------------------------------------------------------------------------------------------
+# REQUIRED PARAMETERS
+# ---------------------------------------------------------------------------------------------------------------------
 
-variable "dynamodb_table_name" {
-  description = "Nom de la table DynamoDB utilisée pour le verrouillage de l'état"
+variable "name" {
+  description = "The base name for the S3 bucket and all other resources"
   type        = string
 }
