@@ -33,3 +33,8 @@ jobs:
       - name: Init Git Submodules
         run: git submodule update --init --recursive
 
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+           submodules: false
+
