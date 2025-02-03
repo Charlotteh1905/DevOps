@@ -26,4 +26,13 @@ jobs:
 
       - name: Run Jest tests
         run: npm test
+      
+      - name: Installer les dépendances
+  	run: npm ci
+
+      - name: Vérifier Jest
+        run: npx jest --version
+	
+      - name: Init Git Submodules
+        run: git submodule update --init --recursive
 
