@@ -1,0 +1,5 @@
+[submodule "DevOps/td2/scripts/tofu/live/sample-app"]
+    path = DevOps/td2/scripts/tofu/live/sample-app
+    url = https://github.com/Charlotteh1905/DevOps.git
+ 
+
