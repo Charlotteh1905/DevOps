@@ -136,3 +136,4 @@ dist
 td2/scripts/tofu/ec2-instance/.terraform/
 td4/scripts/tofu/live/lambda-sample/.terraform/
 td2/
+td5_v2/
