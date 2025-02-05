@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "state" {
-  source = "github.com/Charlotteh1905/DevOps/td5/scripts/tofu/modules/state-bucket"
+  source = "git::https://github.com/Charlotteh1905/DevOps.git"
 
 
   # TODO: fill in your own bucket name!
