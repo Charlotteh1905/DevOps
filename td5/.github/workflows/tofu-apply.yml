@@ -1,0 +1,29 @@
+name: Tofu Apply
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::710271937273:role/lambda-sample-plan
+          aws-region: us-east-2
+
+      - name: Setup OpenTofu
+        uses: opentofu/setup-opentofu@v1
+
+      - name: Initialize Terraform
+        run: tofu init -no-color -input=false
+
+      - name: Apply changes
+        run: tofu apply -no-color -auto-approve
+
