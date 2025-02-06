@@ -1,6 +1,6 @@
 resource "aws_iam_role" "lambda_tests" {
   count              = var.enable_iam_role_for_testing ? 1 : 0
-  name               = "${var.name}-tests"
+  name               = "${var.name}-tests2"
   assume_role_policy = data.aws_iam_policy_document.assume_role_policy_for_tests[0].json
 }
 
